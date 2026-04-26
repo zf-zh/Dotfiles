@@ -1,0 +1,27 @@
+modmap:
+  - name: Global
+    remap:
+        CapsLock:
+          held: CONTROL_L
+          alone: ESC
+        Esc: [CONTROL_L, SUPER_L, ESC]
+    application:
+      not: Vmware
+
+  - name: Terminal
+    remap:
+        CONTROL_R: SUPER_R
+        CONTROL_L: SUPER_L
+        SUPER_R: CONTROL_R
+        SUPER_L: CONTROL_L
+    application:
+      only: [gnome-terminal-server, code]
+
+keymap:
+  - name: Finder
+    remap:
+        ALT-down: CONTROL-o
+        SHIFT-backspace: SHIFT-delete
+    application:
+      only: org.gnome.Nautilus
+

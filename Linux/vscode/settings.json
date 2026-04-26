@@ -1,0 +1,158 @@
+{
+    "editor.fontSize": 16,
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.editor.empty.hint": "hidden",
+    "markdown-preview-enhanced.chromePath": "/opt/google/chrome/google-chrome",
+    // LaTeX
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "xelatex",
+            "tools": [
+                "xelatex"
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "tools": [
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "latexmk",
+            "tools": [
+                "latexmk"
+            ]
+        },
+        {
+            "name": "xelatex -> bibtex -> xelatex*2",
+            "tools": [
+                "xelatex",
+                "bibtex",
+                "xelatex",
+                "xelatex"
+            ]
+        },
+        {
+            "name": "pdflatex -> bibtex -> pdflatex*2",
+            "tools": [
+                "pdflatex",
+                "bibtex",
+                "pdflatex",
+                "pdflatex"
+            ]
+        }
+    ],
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+    "latex-workshop.latex.clean.subfolder.enabled": true,
+    "latex-workshop.message.error.show": true,
+    "latex-workshop.message.warning.show": true,
+    "latex-workshop.latex.recipe.default": "lastUsed",
+    "verilog.linting.iverilog.arguments": "-i",
+    "verilog.linting.linter": "iverilog",
+    "workbench.panel.defaultLocation": "right",
+    "editor.acceptSuggestionOnEnter": "off",
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4o-mini",
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "zsh"
+        },
+        "fish": {
+            "path": "fish"
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        },
+        "bash-login": {
+            "path": "bash",
+            "args": [
+                "-l"
+            ],
+            "icon": "terminal-bash"
+        },
+    },
+    "terminal.integrated.defaultProfile.linux": "bash-login",
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.tabs.enabled": false,
+    "terminal.integrated.suggest.enabled": false,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "window.titleBarStyle": "native",
+    "workbench.colorTheme": "Light Modern",
+    "window.autoDetectColorScheme": true,
+    "workbench.colorCustomizations": {
+        "terminalCursor.foreground": "#7F7F7F"
+    },
+    "github.copilot.enable": {
+        "markdown": true,
+        "plaintext": true
+    },
+    "terminal.integrated.initialHint": false,
+    "update.mode": "none",
+    "workbench.preferredLightColorTheme": "Light Modern",
+    "chat.viewSessions.orientation": "stacked",
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "{git,gitlens,chat-editing-snapshot-text-model,copilot,git-graph,git-graph-3}:/**/*.qrc": "default",
+        "*.qrc": "qt-core.qrcEditor"
+    },
+    "qt-core.additionalQtPaths": [
+        "/opt/Qt/6.11.0/gcc_64/bin/qtpaths6",
+        {
+            "name": "Qt-6.11.0-linux-g++_from_PATH",
+            "path": "/opt/Qt/6.11.0/gcc_64/bin/qtpaths"
+        }
+    ],
+    "qt-core.qtInstallationRoot": "/opt/Qt",
+    "claudeCode.preferredLocation": "panel"
+}

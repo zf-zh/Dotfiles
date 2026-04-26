@@ -1,0 +1,497 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "meta+c",
+        "command": "editor.action.clipboardCopyAction"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-editor.action.clipboardCopyAction"
+    },
+    {
+        "key": "meta+c",
+        "command": "gitlens.views.branches.copy",
+        "when": "focusedView == 'gitlens.views.branches' || focusedView == 'gitlens.views.scm.grouped' && gitlens:views:scm:grouped:view == 'branches'"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-gitlens.views.branches.copy",
+        "when": "focusedView == 'gitlens.views.branches' || focusedView == 'gitlens.views.scm.grouped' && gitlens:views:scm:grouped:view == 'branches'"
+    },
+    {
+        "key": "meta+c",
+        "command": "gitlens.views.commits.copy",
+        "when": "focusedView == 'gitlens.views.commits' || focusedView == 'gitlens.views.scm.grouped' && gitlens:views:scm:grouped:view == 'commits'"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-gitlens.views.commits.copy",
+        "when": "focusedView == 'gitlens.views.commits' || focusedView == 'gitlens.views.scm.grouped' && gitlens:views:scm:grouped:view == 'commits'"
+    },
+    {
+        "key": "meta+c",
+        "command": "gitlens.views.contributors.copy",
+        "when": "focusedView == 'gitlens.views.contributors' || focusedView == 'gitlens.views.scm.grouped' && gitlens:views:scm:grouped:view == 'contributors'"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-gitlens.views.contributors.copy",
+        "when": "focusedView == 'gitlens.views.contributors' || focusedView == 'gitlens.views.scm.grouped' && gitlens:views:scm:grouped:view == 'contributors'"
+    },
+    {
+        "key": "meta+c",
+        "command": "gitlens.views.drafts.copy",
+        "when": "focusedView == 'gitlens.views.drafts'"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-gitlens.views.drafts.copy",
+        "when": "focusedView == 'gitlens.views.drafts'"
+    },
+    {
+        "key": "meta+c",
+        "command": "gitlens.views.fileHistory.copy",
+        "when": "focusedView == 'gitlens.views.fileHistory' || focusedView == 'gitlens.views.scm.grouped' && gitlens:views:scm:grouped:view == 'fileHistory'"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-gitlens.views.fileHistory.copy",
+        "when": "focusedView == 'gitlens.views.fileHistory' || focusedView == 'gitlens.views.scm.grouped' && gitlens:views:scm:grouped:view == 'fileHistory'"
+    },
+    {
+        "key": "meta+c",
+        "command": "gitlens.views.launchpad.copy",
+        "when": "focusedView == 'gitlens.views.launchpad' || focusedView == 'gitlens.views.scm.grouped' && gitlens:views:scm:grouped:view == 'launchpad'"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-gitlens.views.launchpad.copy",
+        "when": "focusedView == 'gitlens.views.launchpad' || focusedView == 'gitlens.views.scm.grouped' && gitlens:views:scm:grouped:view == 'launchpad'"
+    },
+    {
+        "key": "meta+c",
+        "command": "gitlens.views.lineHistory.copy",
+        "when": "focusedView == 'gitlens.views.lineHistory'"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-gitlens.views.lineHistory.copy",
+        "when": "focusedView == 'gitlens.views.lineHistory'"
+    },
+    {
+        "key": "meta+c",
+        "command": "gitlens.views.pullRequest.copy",
+        "when": "focusedView == 'gitlens.views.pullRequest'"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-gitlens.views.pullRequest.copy",
+        "when": "focusedView == 'gitlens.views.pullRequest'"
+    },
+    {
+        "key": "meta+c",
+        "command": "gitlens.views.remotes.copy",
+        "when": "focusedView == 'gitlens.views.remotes' || focusedView == 'gitlens.views.scm.grouped' && gitlens:views:scm:grouped:view == 'remotes'"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-gitlens.views.remotes.copy",
+        "when": "focusedView == 'gitlens.views.remotes' || focusedView == 'gitlens.views.scm.grouped' && gitlens:views:scm:grouped:view == 'remotes'"
+    },
+    {
+        "key": "meta+c",
+        "command": "gitlens.views.repositories.copy",
+        "when": "focusedView == 'gitlens.views.repositories' || focusedView == 'gitlens.views.scm.grouped' && gitlens:views:scm:grouped:view == 'repositories'"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-gitlens.views.repositories.copy",
+        "when": "focusedView == 'gitlens.views.repositories' || focusedView == 'gitlens.views.scm.grouped' && gitlens:views:scm:grouped:view == 'repositories'"
+    },
+    {
+        "key": "meta+c",
+        "command": "gitlens.views.searchAndCompare.copy",
+        "when": "focusedView == 'gitlens.views.searchAndCompare' || focusedView == 'gitlens.views.scm.grouped' && gitlens:views:scm:grouped:view == 'searchAndCompare'"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-gitlens.views.searchAndCompare.copy",
+        "when": "focusedView == 'gitlens.views.searchAndCompare' || focusedView == 'gitlens.views.scm.grouped' && gitlens:views:scm:grouped:view == 'searchAndCompare'"
+    },
+    {
+        "key": "meta+c",
+        "command": "gitlens.views.stashes.copy",
+        "when": "focusedView == 'gitlens.views.stashes' || focusedView == 'gitlens.views.scm.grouped' && gitlens:views:scm:grouped:view == 'stashes'"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-gitlens.views.stashes.copy",
+        "when": "focusedView == 'gitlens.views.stashes' || focusedView == 'gitlens.views.scm.grouped' && gitlens:views:scm:grouped:view == 'stashes'"
+    },
+    {
+        "key": "meta+c",
+        "command": "gitlens.views.tags.copy",
+        "when": "focusedView == 'gitlens.views.tags' || focusedView == 'gitlens.views.scm.grouped' && gitlens:views:scm:grouped:view == 'tags'"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-gitlens.views.tags.copy",
+        "when": "focusedView == 'gitlens.views.tags' || focusedView == 'gitlens.views.scm.grouped' && gitlens:views:scm:grouped:view == 'tags'"
+    },
+    {
+        "key": "meta+c",
+        "command": "gitlens.views.workspaces.copy",
+        "when": "focusedView == 'gitlens.views.workspaces'"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-gitlens.views.workspaces.copy",
+        "when": "focusedView == 'gitlens.views.workspaces'"
+    },
+    {
+        "key": "meta+c",
+        "command": "gitlens.views.worktrees.copy",
+        "when": "focusedView == 'gitlens.views.worktrees' || focusedView == 'gitlens.views.scm.grouped' && gitlens:views:scm:grouped:view == 'worktrees'"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-gitlens.views.worktrees.copy",
+        "when": "focusedView == 'gitlens.views.worktrees' || focusedView == 'gitlens.views.scm.grouped' && gitlens:views:scm:grouped:view == 'worktrees'"
+    },
+    {
+        "key": "meta+c",
+        "command": "chat.inlineResourceAnchor.copyResource",
+        "when": "chatAttachmentResource"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-chat.inlineResourceAnchor.copyResource",
+        "when": "chatAttachmentResource"
+    },
+    {
+        "key": "meta+c",
+        "command": "filesExplorer.copy",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !inputFocus"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-filesExplorer.copy",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !inputFocus"
+    },
+    {
+        "key": "meta+c",
+        "command": "keybindings.editor.copyKeybindingEntry",
+        "when": "inKeybindings && keybindingFocus && !whenFocus"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-keybindings.editor.copyKeybindingEntry",
+        "when": "inKeybindings && keybindingFocus && !whenFocus"
+    },
+    {
+        "key": "meta+c",
+        "command": "problems.action.copy",
+        "when": "problemsVisibility && !relatedInformationFocus && focusedView == 'workbench.panel.markers.view'"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-problems.action.copy",
+        "when": "problemsVisibility && !relatedInformationFocus && focusedView == 'workbench.panel.markers.view'"
+    },
+    {
+        "key": "meta+c",
+        "command": "remote.tunnel.copyAddressInline",
+        "when": "tunnelViewFocus && tunnelType == 'Detected' && tunnelViewMultiSelection == 'undefined' || tunnelViewFocus && tunnelType == 'Forwarded' && tunnelViewMultiSelection == 'undefined'"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-remote.tunnel.copyAddressInline",
+        "when": "tunnelViewFocus && tunnelType == 'Detected' && tunnelViewMultiSelection == 'undefined' || tunnelViewFocus && tunnelType == 'Forwarded' && tunnelViewMultiSelection == 'undefined'"
+    },
+    {
+        "key": "meta+c",
+        "command": "workbench.debug.viewlet.action.copyValue",
+        "when": "!expressionSelected && focusedView == 'workbench.debug.variablesView' || !expressionSelected && focusedView == 'workbench.debug.watchExpressionsView'"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-workbench.debug.viewlet.action.copyValue",
+        "when": "!expressionSelected && focusedView == 'workbench.debug.variablesView' || !expressionSelected && focusedView == 'workbench.debug.watchExpressionsView'"
+    },
+    {
+        "key": "meta+c",
+        "command": "search.action.copyMatch",
+        "when": "fileMatchOrMatchFocus"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-search.action.copyMatch",
+        "when": "fileMatchOrMatchFocus"
+    },
+    {
+        "key": "meta+v",
+        "command": "editor.action.clipboardPasteAction"
+    },
+    {
+        "key": "ctrl+v",
+        "command": "-editor.action.clipboardPasteAction"
+    },
+    {
+        "key": "meta+v",
+        "command": "extension.vim_ctrl+v",
+        "when": "editorTextFocus && vim.active && vim.use<C-v> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+v",
+        "command": "-extension.vim_ctrl+v",
+        "when": "editorTextFocus && vim.active && vim.use<C-v> && !inDebugRepl"
+    },
+    {
+        "key": "meta+v",
+        "command": "filesExplorer.paste",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "ctrl+v",
+        "command": "-filesExplorer.paste",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "meta+v",
+        "command": "markdown.extension.editing.paste",
+        "when": "editorHasSelection && editorTextFocus && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+    },
+    {
+        "key": "ctrl+v",
+        "command": "-markdown.extension.editing.paste",
+        "when": "editorHasSelection && editorTextFocus && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+    },
+    {
+        "key": "meta+a",
+        "command": "notebook.cell.output.selectAll",
+        "when": "notebookEditorFocused && notebookOutputFocused"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "-notebook.cell.output.selectAll",
+        "when": "notebookEditorFocused && notebookOutputFocused"
+    },
+    {
+        "key": "meta+a",
+        "command": "editor.action.selectAll"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "-editor.action.selectAll"
+    },
+    {
+        "key": "meta+a",
+        "command": "list.selectAll",
+        "when": "listFocus && listSupportsMultiselect && !inputFocus && !treestickyScrollFocused"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "-list.selectAll",
+        "when": "listFocus && listSupportsMultiselect && !inputFocus && !treestickyScrollFocused"
+    },
+    {
+        "key": "meta+z",
+        "command": "undo"
+    },
+    {
+        "key": "ctrl+z",
+        "command": "-undo"
+    },
+    {
+        "key": "meta+z",
+        "command": "inlineChat.unstash",
+        "when": "inlineChatHasStashedSession && !editorReadonly"
+    },
+    {
+        "key": "ctrl+z",
+        "command": "-inlineChat.unstash",
+        "when": "inlineChatHasStashedSession && !editorReadonly"
+    },
+    {
+        "key": "meta+x",
+        "command": "editor.action.clipboardCutAction"
+    },
+    {
+        "key": "ctrl+x",
+        "command": "-editor.action.clipboardCutAction"
+    },
+    {
+        "key": "meta+x",
+        "command": "filesExplorer.cut",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "ctrl+x",
+        "command": "-filesExplorer.cut",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "meta+s",
+        "command": "workbench.action.files.save"
+    },
+    {
+        "key": "ctrl+s",
+        "command": "-workbench.action.files.save"
+    },
+    {
+        "key": "meta+c",
+        "command": "workbench.action.terminal.copySelection",
+        "when": "terminalTextSelectedInFocused || terminalFocus && terminalHasBeenCreated && terminalTextSelected || terminalFocus && terminalProcessSupported && terminalTextSelected || terminalFocus && terminalTextSelected && terminalTextSelectedInFocused || terminalHasBeenCreated && terminalTextSelected && terminalTextSelectedInFocused || terminalProcessSupported && terminalTextSelected && terminalTextSelectedInFocused"
+    },
+    {
+        "key": "ctrl+shift+c",
+        "command": "-workbench.action.terminal.copySelection",
+        "when": "terminalTextSelectedInFocused || terminalFocus && terminalHasBeenCreated && terminalTextSelected || terminalFocus && terminalProcessSupported && terminalTextSelected || terminalFocus && terminalTextSelected && terminalTextSelectedInFocused || terminalHasBeenCreated && terminalTextSelected && terminalTextSelectedInFocused || terminalProcessSupported && terminalTextSelected && terminalTextSelectedInFocused"
+    },
+    {
+        "key": "meta+v",
+        "command": "workbench.action.terminal.paste",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+shift+v",
+        "command": "-workbench.action.terminal.paste",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "shift+meta+z",
+        "command": "redo"
+    },
+    {
+        "key": "ctrl+shift+z",
+        "command": "-redo"
+    },
+    {
+        "key": "shift+alt+meta+down",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+alt+down",
+        "command": "-editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+meta+up",
+        "command": "editor.action.copyLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+alt+up",
+        "command": "-editor.action.copyLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+meta+c",
+        "command": "copyFilePath",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "ctrl+alt+c",
+        "command": "-copyFilePath",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "ctrl+k alt+meta+c",
+        "command": "copyFilePath",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+alt+c",
+        "command": "-copyFilePath",
+        "when": "editorFocus"
+    },
+    {
+        "key": "shift+alt+meta+c",
+        "command": "copyRelativeFilePath",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+c",
+        "command": "-copyRelativeFilePath",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "ctrl+k shift+alt+meta+c",
+        "command": "copyRelativeFilePath",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+shift+alt+c",
+        "command": "-copyRelativeFilePath",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+meta+c",
+        "command": "debug.copyWatchExpression",
+        "when": "watchExpressionsExist && !expressionSelected && focusedView == 'workbench.debug.watchExpressionsView'"
+    },
+    {
+        "key": "ctrl+alt+c",
+        "command": "-debug.copyWatchExpression",
+        "when": "watchExpressionsExist && !expressionSelected && focusedView == 'workbench.debug.watchExpressionsView'"
+    },
+    {
+        "key": "shift+alt+meta+down",
+        "command": "markdown.extension.onCopyLineDown",
+        "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+    },
+    {
+        "key": "ctrl+shift+alt+down",
+        "command": "-markdown.extension.onCopyLineDown",
+        "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+    },
+    {
+        "key": "shift+alt+meta+up",
+        "command": "markdown.extension.onCopyLineUp",
+        "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+    },
+    {
+        "key": "ctrl+shift+alt+up",
+        "command": "-markdown.extension.onCopyLineUp",
+        "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+    },
+    {
+        "key": "alt+meta+c",
+        "command": "search.action.copyPath",
+        "when": "fileMatchOrFolderMatchWithResourceFocus"
+    },
+    {
+        "key": "ctrl+alt+c",
+        "command": "-search.action.copyPath",
+        "when": "fileMatchOrFolderMatchWithResourceFocus"
+    },
+    {
+        "key": "shift+meta+v",
+        "command": "notebook.cell.pasteAbove",
+        "when": "notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "ctrl+shift+v",
+        "command": "-notebook.cell.pasteAbove",
+        "when": "notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "shift+meta+s",
+        "command": "workbench.action.files.saveAs"
+    },
+    {
+        "key": "ctrl+shift+s",
+        "command": "-workbench.action.files.saveAs"
+    },
+    {
+        "key": "shift+meta+s",
+        "command": "workbench.action.files.saveLocalFile",
+        "when": "remoteFileDialogVisible"
+    },
+    {
+        "key": "ctrl+shift+s",
+        "command": "-workbench.action.files.saveLocalFile",
+        "when": "remoteFileDialogVisible"
+    }
+]

@@ -1,0 +1,7 @@
+[user]
+	name = Jeff Zhang
+	email = zhaofeizhang24@m.fudan.edu.cn
+[init]
+	defaultbranch = main
+[core]
+	editor = vim
