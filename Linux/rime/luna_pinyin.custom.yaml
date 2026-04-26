@@ -1,0 +1,25 @@
+# Rime custom - luna_pinyin
+patch:
+  "switches":
+    - name: ascii_mode
+      reset: 0
+      states: [ 中文, 西文 ]
+    - name: full_shape
+      reset: 0
+      states: [ 半角, 全角 ]
+    - name: zh_simp
+      reset: 0
+      states: [ 漢字, 汉字 ]
+    - name: ascii_punct
+      reset: 1
+      states: [ 。，, ．， ]
+  "speller/algebra":
+    __patch:
+      - pinyin:/en_eng_bufen
+      - pinyin:/ziantuan
+      - pinyin:/abbreviation
+      - pinyin:/spelling_correction
+      - pinyin:/key_correction
+  "translator/preedit_format/+":
+    __patch:
+      - pinyin:/ziantuan_preedit_format

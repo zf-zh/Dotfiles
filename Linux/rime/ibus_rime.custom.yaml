@@ -1,0 +1,3 @@
+# ibus_rime custom configuration
+patch:
+  "style/horizontal": true

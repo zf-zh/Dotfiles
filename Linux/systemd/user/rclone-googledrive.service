@@ -1,0 +1,7 @@
+[Unit]
+Description=Rclone Backup to Google Drive
+
+[Service]
+Type=oneshot
+ExecStartPre=/usr/bin/bash -c 'until ping -c1 google.com; do sleep 20; done'
+ExecStart=/usr/bin/bash -c "/usr/bin/rclone dedupe GoogleDrive:Backups/JZ2024/Desktop/Development --dedupe-mode newest; /usr/bin/rclone sync /home/jz2024/Desktop/Development GoogleDrive:Backups/JZ2024/Desktop/Development --links --fast-list --contimeout 5s --retries 2 --timeout 10s --low-level-retries 2"

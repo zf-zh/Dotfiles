@@ -1,0 +1,11 @@
+[Unit]
+Description=Xremap
+
+[Service]
+ExecStart=/usr/local/bin/xremap --watch=device %h/.config/xremap/config.yml
+Restart=always
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target
