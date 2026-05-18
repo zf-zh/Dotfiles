@@ -154,5 +154,5 @@
         }
     ],
     "qt-core.qtInstallationRoot": "/opt/Qt",
-    "claudeCode.preferredLocation": "panel"
+    "claudeCode.preferredLocation": "sidebar"
 }
