@@ -1,0 +1,191 @@
+{
+    "editor.fontSize": 15,
+    "editor.fontFamily": "'SF Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontWeight": "500",
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.editor.enablePreview": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    // LaTeX
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "xelatex",
+            "tools": [
+                "xelatex"
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "tools": [
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "latexmk",
+            "tools": [
+                "latexmk"
+            ]
+        },
+        {
+            "name": "xelatex -> bibtex -> xelatex*2",
+            "tools": [
+                "xelatex",
+                "bibtex",
+                "xelatex",
+                "xelatex"
+            ]
+        },
+        {
+            "name": "pdflatex -> bibtex -> pdflatex*2",
+            "tools": [
+                "pdflatex",
+                "bibtex",
+                "pdflatex",
+                "pdflatex"
+            ]
+        }
+    ],
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+    "latex-workshop.latex.clean.subfolder.enabled": true,
+    "latex-workshop.message.error.show": true,
+    "latex-workshop.message.warning.show": true,
+    "latex-workshop.latex.recipe.default": "lastUsed",
+    "verilog.linting.iverilog.arguments": "-i",
+    "verilog.linting.linter": "iverilog",
+    "workbench.panel.defaultLocation": "right",
+    "editor.acceptSuggestionOnEnter": "off",
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+    "python.defaultInterpreterPath": "/opt/homebrew/bin/python3.12",
+    // Terminal
+    "terminal.integrated.profiles.osx": {
+        "bash": {
+            "path": "bash",
+            "args": [
+                "-l"
+            ],
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "zsh",
+            "args": [
+                "-l"
+            ]
+        },
+        "fish": {
+            "path": "fish",
+            "args": [
+                "-l"
+            ]
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        },
+        "bash-5": {
+            "path": "/opt/homebrew/bin/bash",
+            "icon": "terminal-bash"
+        },
+        "bash-login": {
+            "path": "/opt/homebrew/bin/bash",
+            "args": [
+                "-l"
+            ],
+            "icon": "terminal-bash"
+        }
+    },
+    "terminal.integrated.defaultProfile.osx": "bash-login",
+    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.fontWeight": "500",
+    "terminal.integrated.tabs.enabled": false,
+    "terminal.integrated.suggest.enabled": false,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "window.autoDetectColorScheme": true,
+    "workbench.colorCustomizations": {
+        "terminalCursor.foreground": "#7F7F7F"
+    },
+    "github.copilot.enable": {
+        "markdown": true,
+        "plaintext": true
+    },
+    "terminal.integrated.initialHint": false,
+    "explorer.confirmPasteNative": false,
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "{git,gitlens,chat-editing-snapshot-text-model,copilot,git-graph,git-graph-3}:/**/*.qrc": "default",
+        "{git,gitlens,chat-editing-snapshot-text-model,copilot,git-graph,git-graph-3}:/**/*.ui": "default",
+        "*.qrc": "qt-core.qrcEditor"
+    },
+    "qt-core.additionalQtPaths": [
+        "/opt/homebrew/opt/qt/bin/qtpaths",
+        {
+            "name": "Qt-6.10.2-macx-clang_from_PATH",
+            "path": "/opt/homebrew/bin/qtpaths"
+        }
+    ],
+    "qt-core.defaultProjectDirectory": "/Users/jz2025/Desktop/Development",
+    "workbench.preferredLightColorTheme": "Light Modern",
+    "workbench.preferredDarkColorTheme": "Dark Modern",
+    "swift.disableSwiftPackageManagerIntegration": true,
+    "explorer.fileNesting.patterns": {
+        "*.ts": "${capture}.js",
+        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+        "*.jsx": "${capture}.js",
+        "*.tsx": "${capture}.ts",
+        "tsconfig.json": "tsconfig.*.json",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock",
+        "*.sqlite": "${capture}.${extname}-*",
+        "*.db": "${capture}.${extname}-*",
+        "*.sqlite3": "${capture}.${extname}-*",
+        "*.db3": "${capture}.${extname}-*",
+        "*.sdb": "${capture}.${extname}-*",
+        "*.s3db": "${capture}.${extname}-*"
+    },
+    "claudeCode.preferredLocation": "sidebar",
+    "github.copilot.nextEditSuggestions.eagerness": "high"
+}
