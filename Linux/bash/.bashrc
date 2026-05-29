@@ -29,6 +29,7 @@ alias g='git'
 alias t='tmux'
 alias ff='fastfetch'
 alias i='curl ifconfig.me && echo'
+alias path="echo $PATH | sed 's/:/\n/g'"
 
 # Bind
 set -o vi

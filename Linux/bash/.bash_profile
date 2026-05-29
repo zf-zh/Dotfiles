@@ -4,6 +4,12 @@ then
     source /home/jz2024/.bashrc
 fi
 
+# Local bin
+if [[ ":$PATH:" != *":/home/jz2024/.local/bin:"* ]]
+then
+    export PATH=/home/jz2024/.local/bin:${PATH}
+fi
+
 # Homebrew
 if [ -z $HOMEBREW_REPOSITORY ]
 then
@@ -16,6 +22,22 @@ then
     export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles"
     export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.ustc.edu.cn/brew.git"
     export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.ustc.edu.cn/homebrew-core.git"
+fi
+
+# Swift
+if [ -z $SWIFTLY_HOME_DIR ]
+then
+    export SWIFTLY_HOME_DIR="/home/jz2024/.local/share/swiftly"
+    export SWIFTLY_BIN_DIR="/home/jz2024/.local/share/swiftly/bin"
+    export SWIFTLY_TOOLCHAINS_DIR="/home/jz2024/.local/share/swiftly/toolchains"
+    export PATH=${PATH}:/home/jz2024/.local/share/swiftly/bin
+fi
+
+# Rust
+if [ -z $CARGO_PATH ]
+then
+    export CARGO_PATH=/home/jz2024/.cargo
+    export PATH=${PATH}:/home/jz2024/.cargo/bin
 fi
 
 # Qt6
