@@ -37,7 +37,7 @@ set -o vi
 PS1="\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]\$ "
 
 # Update
-alias update='brew update && brew upgrade'
+alias update='brew update && brew upgrade --no-ask'
 
 # History
 HISTSIZE=10000
@@ -46,4 +46,9 @@ HISTFILESIZE=1000000
 # Remote desktop
 alias ssh-remote-login='autossh -M 0 -q -fN -L 3389:localhost:23389 JZ2026-Ubuntu-Japan'
 alias ssh-desktop-sharing='autossh -M 0 -q -fN -L 3390:localhost:23390 JZ2026-Ubuntu-Japan'
+
+# Battery
+alias charge-off='sudo smc -k CHTE -w 01000000 && echo "Charging paused — still running on the adapter"'
+alias charge-on='sudo smc -k CHTE -w 00000000 && echo "Charging resumed"'
+alias charge-status='smc -k CHTE -r | grep -q "00 00 00 00" && echo "Charging allowed" || echo "Charging held"'
 
