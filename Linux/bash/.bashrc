@@ -44,8 +44,8 @@ HISTFILESIZE=1000000
 # Update
 alias update='sudo apt update && sudo apt upgrade -y'
 alias update-apt='sudo apt update && sudo apt upgrade -y'
-alias update-brew='brew update && brew upgrade'
-alias update-all='sudo apt update && sudo apt upgrade -y && brew update && brew upgrade'
+alias update-brew='brew update && brew upgrade --no-ask'
+alias update-all='sudo apt update && sudo apt upgrade -y && brew update && brew upgrade --no-ask'
 
 # Xilinx
 alias petalinux-setup='source /opt/Xilinx/PetaLinux/2024.2/settings.sh'
