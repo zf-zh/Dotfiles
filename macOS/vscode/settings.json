@@ -84,7 +84,7 @@
     "swift.disableSwiftPackageManagerIntegration": true,
     "[swift]": {
         "editor.tabSize": 2,
-        "editor.defaultFormatter": "swiftlang.swift-vscode",
+        "editor.defaultFormatter": "swiftlang.swift-vscode"
     },
     // Python
     "python.defaultInterpreterPath": "/opt/homebrew/bin/python3.12",
