@@ -1,10 +1,115 @@
 {
+    // Basic
     "editor.fontSize": 15,
     "editor.fontFamily": "'SF Mono', Menlo, Monaco, 'Courier New', monospace",
     "editor.fontWeight": "500",
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.indentSize": "tabSize",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
     "workbench.editor.empty.hint": "hidden",
     "workbench.editor.enablePreview": false,
+    "workbench.panel.defaultLocation": "right",
+    "workbench.preferredLightColorTheme": "Light Modern",
+    "workbench.preferredDarkColorTheme": "Dark Modern",
+    "workbench.colorCustomizations": {
+        "terminalCursor.foreground": "#7F7F7F"
+    },
+    "window.autoDetectColorScheme": true,
     "security.workspace.trust.untrustedFiles": "open",
+    // Terminal
+    "terminal.integrated.profiles.osx": {
+        "bash": {
+            "path": "bash",
+            "args": [
+                "-l"
+            ],
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "zsh",
+            "args": [
+                "-l"
+            ]
+        },
+        "fish": {
+            "path": "fish",
+            "args": [
+                "-l"
+            ]
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        },
+        "bash-5": {
+            "path": "/opt/homebrew/bin/bash",
+            "icon": "terminal-bash"
+        },
+        "bash-login": {
+            "path": "/opt/homebrew/bin/bash",
+            "args": [
+                "-l"
+            ],
+            "icon": "terminal-bash"
+        }
+    },
+    "terminal.integrated.defaultProfile.osx": "bash-login",
+    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.fontWeight": "500",
+    "terminal.integrated.tabs.enabled": false,
+    "terminal.integrated.suggest.enabled": false,
+    "terminal.integrated.initialHint": false,
+    // Markdown
+    "[markdown]": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+        "files.trimTrailingWhitespace": false
+    },
+    // C++
+    "C_Cpp.formatting": "clangFormat",
+    "C_Cpp.clang_format_style": "file",
+    "C_Cpp.clang_format_fallbackStyle": "Google",
+    "[c][cpp]": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    // Swift
+    "swift.disableSwiftPackageManagerIntegration": true,
+    "[swift]": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "swiftlang.swift-vscode",
+    },
+    // Python
+    "python.defaultInterpreterPath": "/opt/homebrew/bin/python3.12",
+    "[python]": {
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports.ruff": "explicit"
+        }
+    },
+    // Verilog
+    "verilog.linting.linter": "iverilog",
+    "verilog.linting.iverilog.arguments": "-i -g2012 -Wall",
+    "verilog.ctags.enabled": true,
+    "verilog.ctags.path": "/opt/homebrew/bin/ctags",
+    "verilog.formatting.verilogHDL.formatter": "verible-verilog-format",
+    "verilog.formatting.systemVerilog.formatter": "verible-verilog-format",
+    "verilog.formatting.veribleVerilogFormatter.path": "/opt/homebrew/bin/verible-verilog-format",
+    "verilog.formatting.veribleVerilogFormatter.arguments": "--indentation_spaces 2 --column_limit 100 --assignment_statement_alignment=align --port_declarations_alignment=align",
+    "verilog.languageServer.veribleVerilogLs.enabled": true,
+    "verilog.languageServer.veribleVerilogLs.path": "/opt/homebrew/bin/verible-verilog-ls",
+    "[verilog][systemverilog]": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "mshr-h.veriloghdl"
+    },
     // LaTeX
     "latex-workshop.latex.tools": [
         {
@@ -88,79 +193,22 @@
     "latex-workshop.latex.autoBuild.run": "onSave",
     "latex-workshop.latex.autoClean.run": "onBuilt",
     "latex-workshop.latex.clean.subfolder.enabled": true,
+    "latex-workshop.latex.recipe.default": "lastUsed",
     "latex-workshop.message.error.show": true,
     "latex-workshop.message.warning.show": true,
-    "latex-workshop.latex.recipe.default": "lastUsed",
-    "verilog.linting.iverilog.arguments": "-i",
-    "verilog.linting.linter": "iverilog",
-    "workbench.panel.defaultLocation": "right",
-    "editor.acceptSuggestionOnEnter": "off",
-    "gitlens.ai.model": "vscode",
-    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
-    "python.defaultInterpreterPath": "/opt/homebrew/bin/python3.12",
-    // Terminal
-    "terminal.integrated.profiles.osx": {
-        "bash": {
-            "path": "bash",
-            "args": [
-                "-l"
-            ],
-            "icon": "terminal-bash"
-        },
-        "zsh": {
-            "path": "zsh",
-            "args": [
-                "-l"
-            ]
-        },
-        "fish": {
-            "path": "fish",
-            "args": [
-                "-l"
-            ]
-        },
-        "tmux": {
-            "path": "tmux",
-            "icon": "terminal-tmux"
-        },
-        "pwsh": {
-            "path": "pwsh",
-            "icon": "terminal-powershell"
-        },
-        "bash-5": {
-            "path": "/opt/homebrew/bin/bash",
-            "icon": "terminal-bash"
-        },
-        "bash-login": {
-            "path": "/opt/homebrew/bin/bash",
-            "args": [
-                "-l"
-            ],
-            "icon": "terminal-bash"
-        }
+    "latex-workshop.formatting.latex": "latexindent",
+    "latex-workshop.formatting.latexindent.path": "/Library/TeX/texbin/latexindent",
+    "[latex]": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "James-Yu.latex-workshop",
+        "editor.wordWrap": "on",
+        "editor.wrappingIndent": "same"
     },
-    "terminal.integrated.defaultProfile.osx": "bash-login",
-    "terminal.integrated.fontSize": 15,
-    "terminal.integrated.fontWeight": "500",
-    "terminal.integrated.tabs.enabled": false,
-    "terminal.integrated.suggest.enabled": false,
-    "github.copilot.nextEditSuggestions.enabled": true,
-    "window.autoDetectColorScheme": true,
-    "workbench.colorCustomizations": {
-        "terminalCursor.foreground": "#7F7F7F"
+    "[tex][bibtex]": {
+        "editor.tabSize": 2
     },
-    "github.copilot.enable": {
-        "markdown": true,
-        "plaintext": true
-    },
-    "terminal.integrated.initialHint": false,
-    "explorer.confirmPasteNative": false,
-    "workbench.editorAssociations": {
-        "*.copilotmd": "vscode.markdown.preview.editor",
-        "{git,gitlens,chat-editing-snapshot-text-model,copilot,git-graph,git-graph-3}:/**/*.qrc": "default",
-        "{git,gitlens,chat-editing-snapshot-text-model,copilot,git-graph,git-graph-3}:/**/*.ui": "default",
-        "*.qrc": "qt-core.qrcEditor"
-    },
+    // Qt
+    "qt-core.defaultProjectDirectory": "/Users/jz2025/Desktop/Development",
     "qt-core.additionalQtPaths": [
         "/opt/homebrew/opt/qt/bin/qtpaths",
         {
@@ -168,10 +216,23 @@
             "path": "/opt/homebrew/bin/qtpaths"
         }
     ],
-    "qt-core.defaultProjectDirectory": "/Users/jz2025/Desktop/Development",
-    "workbench.preferredLightColorTheme": "Light Modern",
-    "workbench.preferredDarkColorTheme": "Dark Modern",
-    "swift.disableSwiftPackageManagerIntegration": true,
+    // Others
+    "explorer.confirmPasteNative": false,
+    "chat.viewSessions.orientation": "stacked",
+    "git.openRepositoryInParentFolders": "never",
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "github.copilot.nextEditSuggestions.eagerness": "high",
+    "github.copilot.enable": {
+        "markdown": true,
+        "plaintext": true
+    },
+    "claudeCode.preferredLocation": "sidebar",
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "{git,gitlens,chat-editing-snapshot-text-model,copilot,git-graph,git-graph-3}:/**/*.qrc": "default",
+        "{git,gitlens,chat-editing-snapshot-text-model,copilot,git-graph,git-graph-3}:/**/*.ui": "default",
+        "*.qrc": "qt-core.qrcEditor"
+    },
     "explorer.fileNesting.patterns": {
         "*.ts": "${capture}.js",
         "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
@@ -185,7 +246,5 @@
         "*.db3": "${capture}.${extname}-*",
         "*.sdb": "${capture}.${extname}-*",
         "*.s3db": "${capture}.${extname}-*"
-    },
-    "claudeCode.preferredLocation": "sidebar",
-    "github.copilot.nextEditSuggestions.eagerness": "high"
+    }
 }
