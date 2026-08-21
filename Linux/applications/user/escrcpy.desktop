@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Escrcpy
+Exec=/opt/Escrcpy/escrcpy %U
+Terminal=false
+Type=Application
+Icon=escrcpy-mine
+StartupWMClass=Escrcpy
+Comment=Scrcpy Powered by Electron
+Categories=Utility;

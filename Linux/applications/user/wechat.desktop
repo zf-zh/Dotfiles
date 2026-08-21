@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=WeChat
+Name[zh_CN]=微信
+Exec=/usr/bin/wechat %U
+StartupNotify=true
+Terminal=false
+#Icon=/usr/share/icons/hicolor/256x256/apps/wechat.png
+Icon=wechat-mine
+Type=Application
+Categories=Utility;
+Comment=Wechat Desktop
+Comment[zh_CN]=微信桌面版

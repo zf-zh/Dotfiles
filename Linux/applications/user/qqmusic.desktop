@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=QQ Music
+Exec=/opt/qqmusic/qqmusic --no-sandbox %U
+Terminal=false
+Type=Application
+#Icon=/usr/share/icons/hicolor/128x128/apps/qqmusic.png
+Icon=qqmusic-mine
+StartupWMClass=qqmusic
+Comment=Tencent QQMusic
+Categories=AudioVideo;

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=pkexec env DISPLAY=$DISPLAY WAYLAND_DISPLAY=$WAYLAND_DISPLAY XAUTHORITY=$XAUTHORITY /opt/Qt/MaintenanceTool
+Path=/opt/Qt
+Name=Qt Maintenance Tool
+GenericName=Install or uninstall Qt components.
+Icon=QtIcon
+Terminal=false
+Categories=Development;Qt;

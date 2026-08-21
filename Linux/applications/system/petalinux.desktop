@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=PetaLinux 2024.2
+Comment=Command Line Shell for PetaLinux Tools
+Icon=org.gnome.Terminal
+Exec=gnome-terminal -- bash --rcfile /opt/Xilinx/PetaLinux/2024.2/launch.sh
+Categories=GNOME;GTK;System;TerminalEmulator;
+StartupNotify=true
+StartupWMClass=Gnome-terminal
+SingleMainWindow=false

@@ -1,0 +1,22 @@
+[MIME Cache]
+application/marc=zotero.desktop;
+application/mods+xml=zotero.desktop;
+application/rdf+xml=zotero.desktop;
+application/vnd.citationstyles.style+xml=zotero.desktop;
+application/x-bibtex=zotero.desktop;
+application/x-endnote-refer=zotero.desktop;
+application/x-inst-for-Scientific-info=zotero.desktop;
+application/x-research-info-systems=zotero.desktop;
+application/x-vmware-enc-vm=vmware-player.desktop;vmware-workstation.desktop;
+application/x-vmware-team=vmware-workstation.desktop;
+application/x-vmware-vm=vmware-player.desktop;vmware-workstation.desktop;
+application/x-xpinstall=thunderbird.desktop;
+text/plain=zotero.desktop;
+text/ris=zotero.desktop;
+text/x-bibtex=zotero.desktop;
+text/x-research-info-systems=zotero.desktop;
+x-scheme-handler/baiduyunguanjia=baidunetdisk.desktop;
+x-scheme-handler/clash=Clash Verge.desktop;
+x-scheme-handler/mailto=thunderbird.desktop;
+x-scheme-handler/vmrc=vmware-player.desktop;vmware-workstation.desktop;
+x-scheme-handler/zotero=zotero.desktop;

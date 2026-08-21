@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=TencentMeeting
+Name[zh_CN]=腾讯会议
+Exec=/opt/wemeet/wemeetapp.sh %u
+Icon=meeting
+Type=Application
+Terminal=false
+Categories=AudioVideo;
+MimeType=x-scheme-handler/wemeet;

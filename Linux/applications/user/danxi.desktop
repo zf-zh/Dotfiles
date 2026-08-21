@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Danta
+Name[zh_CN]=旦挞
+Comment=Maybe the best all-rounded service app for Fudan University students
+Comment[zn_CN]=可能是复旦学生最好的第三方校园服务APP
+GenericName=Campus Service
+GenericName[zh_CN]=校园服务
+Exec=/opt/Danxi/dan_xi
+#Icon=/opt/Danxi/data/flutter_assets/assets/graphics/app_icon.ico
+Icon=danxi-mine
+Type=Application
+StartupNotify=true
+StartupWMClass=dan_xi
+Categories=Utility;

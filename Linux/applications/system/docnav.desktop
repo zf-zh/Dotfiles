@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=DocNav 2024.2
+Comment=Xilinx Documentation Navigator
+Icon=/opt/Xilinx/Vivado/2024.2/doc/images/vivado_logo.ico
+Exec=/opt/Xilinx/DocNav/docnav
+Terminal=false
+Categories=Documentation;
+StartupNotify=true
+StartupWMClass=docnav

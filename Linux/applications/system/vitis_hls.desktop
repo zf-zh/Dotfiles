@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Vitis HLS 2024.2
+Comment=High-Level Synthesis
+Icon=/opt/Xilinx/Vitis/2024.2/ide/electron-app/lnx64/resources/app/resources/icons/vitis-logo-latest.ico
+Exec=/opt/Xilinx/Vitis_HLS/2024.2/bin/vitis_hls -classic
+Path=/home/jz2024/.Xilinx_logs/Vitis_HLS
+Terminal=false
+Categories=Development;Electronics;Engineering;
+StartupNotify=true
+StartupWMClass=Vitis HLS

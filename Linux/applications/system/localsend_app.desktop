@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Version=1.17.0+58
+Name=LocalSend
+GenericName=An open source cross-platform alternative to AirDrop
+Icon=/opt/LocalSend/data/flutter_assets/assets/img/logo-256.png
+Exec=/opt/LocalSend/localsend_app %U
+Categories=GTK;FileTransfer;Utility;
+Keywords=Sharing;LAN;Files;
+StartupNotify=true

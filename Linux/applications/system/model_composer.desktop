@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Vitis Model Composer 2024.2
+Comment=Model-Based Design for Xilinx Devices (Launches MATLAB)
+Icon=matlab
+Exec=env GTK_PATH=/usr/lib/x86_64-linux-gnu/gtk-2.0 LIBGL_ALWAYS_SOFTWARE=1 model_composer -desktop
+Terminal=false
+Categories=Development;Math;Science;
+StartupNotify=true
+StartupWMClass=MATLAB R2024a - academic use

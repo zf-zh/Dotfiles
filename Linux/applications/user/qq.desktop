@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=QQ
+Exec=/opt/QQ/qq %U
+Terminal=false
+Type=Application
+Icon=qq-mine
+StartupWMClass=QQ
+Categories=Network;
+Comment=QQ

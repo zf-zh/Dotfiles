@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Vivado 2024.2
+Comment=Synthesis and Analysis of HDL designs
+Icon=/opt/Xilinx/Vivado/2024.2/doc/images/vivado_logo.ico
+Exec=/opt/Xilinx/Vivado/2024.2/bin/vivado
+Path=/home/jz2024/.Xilinx_logs/Vivado
+Terminal=false
+Categories=Development;Electronics;Engineering;
+StartupNotify=true
+StartupWMClass=Vivado
