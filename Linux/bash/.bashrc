@@ -53,6 +53,9 @@ alias petalinux-setup='source /opt/Xilinx/PetaLinux/2024.2/settings.sh'
 # Matlab
 alias matlab='GTK_PATH=/usr/lib/x86_64-linux-gnu/gtk-2.0 LIBGL_ALWAYS_SOFTWARE=1 matlab'
 
+# LaTeX
+alias update-tex='sudo /opt/texlive/2026/bin/x86_64-linux/tlmgr update --self --all'
+
 # Sync
 alias sync-to-drive='/usr/bin/rclone sync /home/jz2024/Desktop/Development GoogleDrive:Backups/JZ2024/Desktop/Development --links --fast-list --contimeout 5s --retries 2 --timeout 10s --low-level-retries 2'
 alias sync-to-drive-dedupe='/usr/bin/rclone dedupe GoogleDrive:Backups/JZ2024/Desktop/Development --dedupe-mode newes'

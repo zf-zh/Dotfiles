@@ -184,7 +184,7 @@
     "latex-workshop.message.error.show": true,
     "latex-workshop.message.warning.show": true,
     "latex-workshop.formatting.latex": "latexindent",
-    "latex-workshop.formatting.latexindent.path": "/usr/local/texlive/2025/bin/x86_64-linux/latexindent",
+    "latex-workshop.formatting.latexindent.path": "/opt/texlive/2026/bin/x86_64-linux/latexindent",
     "[latex]": {
         "editor.tabSize": 2,
         "editor.defaultFormatter": "James-Yu.latex-workshop",

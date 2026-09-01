@@ -64,9 +64,9 @@ fi
 # LaTeX
 if [ -z $TEXLIVE_PATH ]
 then
-    export TEXLIVE_PATH=/usr/local/texlive/2025
-    export MANPATH=${MANPATH}:/usr/local/texlive/2025/texmf-dist/doc/man
-    export INFOPATH=${INFOPATH}:/usr/local/texlive/2025/texmf-dist/doc/info
-    export PATH=${PATH}:/usr/local/texlive/2025/bin/x86_64-linux
+    export TEXLIVE_PATH=/opt/texlive/2026
+    export MANPATH=${MANPATH}:$TEXLIVE_PATH/texmf-dist/doc/man
+    export INFOPATH=${INFOPATH}:$TEXLIVE_PATH/texmf-dist/doc/info
+    export PATH=${PATH}:$TEXLIVE_PATH/bin/x86_64-linux
 fi
 
