@@ -29,6 +29,7 @@ alias g='git'
 alias t='tmux'
 alias ff='fastfetch'
 alias i='curl ifconfig.me && echo'
+alias path="echo $PATH | sed 's/:/\n/g'"
 
 # Bind
 set -o vi
@@ -36,12 +37,17 @@ set -o vi
 # PS
 PS1="\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]\$ "
 
-# Update
-alias update='brew update && brew upgrade --no-ask'
-
 # History
 HISTSIZE=10000
 HISTFILESIZE=1000000
+
+# Update
+alias update='brew update && brew upgrade --no-ask'
+alias update-brew='brew update && brew upgrade --no-ask'
+alias update-tex='sudo /Library/TeX/texbin/tlmgr update --self --all'
+alias update-packages='update-brew'
+alias update-languages='update-tex'
+alias update-all='update-packages; update-languages'
 
 # Remote desktop
 alias ssh-remote-login='autossh -M 0 -q -fN -L 3389:localhost:23389 JZ2026-Ubuntu-Japan'
