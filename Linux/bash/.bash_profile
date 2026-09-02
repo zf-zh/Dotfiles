@@ -27,9 +27,9 @@ fi
 # Swift
 if [ -z $SWIFTLY_HOME_DIR ]
 then
-    export SWIFTLY_HOME_DIR="/home/jz2024/.local/share/swiftly"
-    export SWIFTLY_BIN_DIR="/home/jz2024/.local/share/swiftly/bin"
-    export SWIFTLY_TOOLCHAINS_DIR="/home/jz2024/.local/share/swiftly/toolchains"
+    export SWIFTLY_HOME_DIR=/home/jz2024/.local/share/swiftly
+    export SWIFTLY_BIN_DIR=/home/jz2024/.local/share/swiftly/bin
+    export SWIFTLY_TOOLCHAINS_DIR=/home/jz2024/.local/share/swiftly/toolchains
     export PATH=${PATH}:/home/jz2024/.local/share/swiftly/bin
 fi
 
