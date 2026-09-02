@@ -70,3 +70,21 @@ then
     export PATH=${PATH}:$TEXLIVE_PATH/bin/x86_64-linux
 fi
 
+# Flutter
+if [ -z $FLUTTER_PATH ]
+then
+    export FLUTTER_PATH=/opt/flutter
+    export PATH=${PATH}:$FLUTTER_PATH/bin
+    export PUB_HOSTED_URL="https://mirrors.tuna.tsinghua.edu.cn/dart-pub"
+    export FLUTTER_STORAGE_BASE_URL="https://mirrors.tuna.tsinghua.edu.cn/flutter"
+fi
+
+# Android
+if [ -z $ANDROID_HOME ]
+then
+    export ANDROID_HOME=/opt/Android/SDK
+    export PATH=${PATH}:$ANDROID_HOME/platform-tools
+    export PATH=${PATH}:$ANDROID_HOME/emulator
+    export PATH=${PATH}:$ANDROID_HOME/cmdline-tools/latest/bin
+fi
+
