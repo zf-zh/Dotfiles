@@ -2,7 +2,7 @@
 Version=1.0
 Type=Application
 Name=Android Studio
-Icon=/opt/android-studio/bin/studio.png
+Icon=android-studio
 Exec="/opt/android-studio/bin/studio.sh" %f
 Comment=The Drive to Develop
 Categories=Development;IDE;
