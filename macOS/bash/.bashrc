@@ -58,3 +58,6 @@ alias charge-off='sudo smc -k CHTE -w 01000000 && echo "Charging paused — stil
 alias charge-on='sudo smc -k CHTE -w 00000000 && echo "Charging resumed"'
 alias charge-status='smc -k CHTE -r | grep -q "00 00 00 00" && echo "Charging allowed" || echo "Charging held"'
 
+# Temporary
+alias sync-dsa='lftp dsa -e "mirror --continue --parallel=4 . /Users/jz2025/Documents/Home/Study/Undergraduate/Semester5/Data-Structures-and-Algorithms/Documents; exit"; chmod -R 755 /Users/jz2025/Documents/Home/Study/Undergraduate/Semester5/Data-Structures-and-Algorithms/Documents; echo "Permissions set to 755"'
+

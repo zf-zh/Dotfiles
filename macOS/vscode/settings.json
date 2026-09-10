@@ -81,10 +81,14 @@
         "editor.defaultFormatter": "ms-vscode.cpptools"
     },
     // Swift
-    "swift.disableSwiftPackageManagerIntegration": true,
+    "sweetpad.format.path": "/Library/Developer/CommandLineTools/usr/bin/swift-format",
+    "sweetpad.format.args": [
+        "--in-place",
+        "${file}"
+    ],
     "[swift]": {
         "editor.tabSize": 2,
-        "editor.defaultFormatter": "swiftlang.swift-vscode"
+        "editor.defaultFormatter": "sweetpad.sweetpad"
     },
     // Python
     "python.defaultInterpreterPath": "/opt/homebrew/bin/python3.12",
@@ -190,14 +194,14 @@
         }
     ],
     "latex-workshop.view.pdf.viewer": "tab",
-    "latex-workshop.latex.autoBuild.run": "onSave",
-    "latex-workshop.latex.autoClean.run": "onBuilt",
-    "latex-workshop.latex.clean.subfolder.enabled": true,
-    "latex-workshop.latex.recipe.default": "lastUsed",
+    "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.latex.autoClean.run": "never",
+    "latex-workshop.latex.clean.subfolder.enabled": false,
+    "latex-workshop.latex.recipe.default": "xelatex",
     "latex-workshop.message.error.show": true,
     "latex-workshop.message.warning.show": true,
     "latex-workshop.formatting.latex": "latexindent",
-    "latex-workshop.formatting.latexindent.path": "/Library/TeX/texbin/latexindent",
+    "latex-workshop.formatting.latexindent.path": "/opt/homebrew/bin/latexindent",
     "[latex]": {
         "editor.tabSize": 2,
         "editor.defaultFormatter": "James-Yu.latex-workshop",
@@ -227,6 +231,7 @@
         "plaintext": true
     },
     "claudeCode.preferredLocation": "sidebar",
+    "makefile.configureOnOpen": false,
     "workbench.editorAssociations": {
         "*.copilotmd": "vscode.markdown.preview.editor",
         "{git,gitlens,chat-editing-snapshot-text-model,copilot,git-graph,git-graph-3}:/**/*.qrc": "default",
