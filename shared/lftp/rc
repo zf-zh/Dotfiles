@@ -1,0 +1,3 @@
+set ftp:use-utf8/10.134.140.105 no
+set ftp:charset/10.134.140.105 GBK
+set ftp:use-mlsd/10.134.140.105 no
