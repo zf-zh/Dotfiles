@@ -1,0 +1,19 @@
+Host JZ2026-Ubuntu-Japan
+    HostName 20.46.162.37
+    User jz2026-ubuntu-japan
+    Port 2022
+    IdentityFile ~/.ssh/id_rsa_jz2026_ubuntu_japan
+
+Host JZ2024-Remote
+    HostName localhost
+    User jz2024
+    Port 20022
+    ProxyJump JZ2026-Ubuntu-Japan
+    IdentityFile ~/.ssh/id_ed25519_jz2024
+
+Host Github
+    HostName ssh.github.com
+    User git
+    Port 443
+    IdentityFile ~/.ssh/id_ed25519_github
+
