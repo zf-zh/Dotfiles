@@ -15,7 +15,7 @@ modmap:
         SUPER_R: CONTROL_R
         SUPER_L: CONTROL_L
     application:
-      only: [gnome-terminal-server, code]
+      only: [gnome-terminal-server, com.microsoft.VSCode]
 
 keymap:
   - name: Finder
